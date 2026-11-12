@@ -1,0 +1,37 @@
+START RequestId: 78174c5d-248b-493b-b512-906f05d3acd8 Version: $LATEST
+{"body": "order-ok", "event": "received", "message_id": "7df01aac-e386-48c7-acba-aaabad0d0fc3", "receive_count": "1"}
+{"body": "order-ok", "event": "processed", "message_id": "7df01aac-e386-48c7-acba-aaabad0d0fc3", "receive_count": "1"}
+END RequestId: 78174c5d-248b-493b-b512-906f05d3acd8
+REPORT RequestId: 78174c5d-248b-493b-b512-906f05d3acd8	Duration: 112.73 ms	Billed Duration: 113 ms	Memory Size: 128 MB
+START RequestId: 7bcd225d-d28c-4a91-be6e-61bb3ef1f197 Version: $LATEST
+{"body": "order-poison", "event": "received", "message_id": "193c9481-2fae-42ae-a35a-e77fe77c20e5", "receive_count": "1"}
+{"body": "order-poison", "event": "deliberate_failure", "message_id": "193c9481-2fae-42ae-a35a-e77fe77c20e5", "receive_count": "1"}
+[ERROR] RuntimeError: Deliberate failure for order-poison
+Traceback (most recent call last):
+  File "/var/task/handler.py", line 17, in lambda_handler
+    raise RuntimeError("Deliberate failure for order-poison")
+END RequestId: 7bcd225d-d28c-4a91-be6e-61bb3ef1f197
+REPORT RequestId: 7bcd225d-d28c-4a91-be6e-61bb3ef1f197	Duration: 108.61 ms	Billed Duration: 109 ms	Memory Size: 128 MB
+START RequestId: d23df0aa-f942-4cd2-9f0f-353c2acbaff0 Version: $LATEST
+{"body": "order-poison", "event": "received", "message_id": "193c9481-2fae-42ae-a35a-e77fe77c20e5", "receive_count": "2"}
+{"body": "order-poison", "event": "deliberate_failure", "message_id": "193c9481-2fae-42ae-a35a-e77fe77c20e5", "receive_count": "2"}
+[ERROR] RuntimeError: Deliberate failure for order-poison
+Traceback (most recent call last):
+  File "/var/task/handler.py", line 17, in lambda_handler
+    raise RuntimeError("Deliberate failure for order-poison")
+END RequestId: d23df0aa-f942-4cd2-9f0f-353c2acbaff0
+REPORT RequestId: d23df0aa-f942-4cd2-9f0f-353c2acbaff0	Duration: 98.81 ms	Billed Duration: 99 ms	Memory Size: 128 MB
+START RequestId: e8bce921-6c86-4661-95bd-86d9a98b7abe Version: $LATEST
+{"body": "order-poison", "event": "received", "message_id": "193c9481-2fae-42ae-a35a-e77fe77c20e5", "receive_count": "3"}
+{"body": "order-poison", "event": "deliberate_failure", "message_id": "193c9481-2fae-42ae-a35a-e77fe77c20e5", "receive_count": "3"}
+[ERROR] RuntimeError: Deliberate failure for order-poison
+Traceback (most recent call last):
+  File "/var/task/handler.py", line 17, in lambda_handler
+    raise RuntimeError("Deliberate failure for order-poison")
+END RequestId: e8bce921-6c86-4661-95bd-86d9a98b7abe
+REPORT RequestId: e8bce921-6c86-4661-95bd-86d9a98b7abe	Duration: 104.37 ms	Billed Duration: 105 ms	Memory Size: 128 MB
+START RequestId: 925bca23-b942-45f8-923e-f28172dc65e2 Version: $LATEST
+{"body": "order-poison", "event": "received", "message_id": "193c9481-2fae-42ae-a35a-e77fe77c20e5", "receive_count": "5"}
+{"body": "order-poison", "event": "processed", "message_id": "193c9481-2fae-42ae-a35a-e77fe77c20e5", "receive_count": "5"}
+END RequestId: 925bca23-b942-45f8-923e-f28172dc65e2
+REPORT RequestId: 925bca23-b942-45f8-923e-f28172dc65e2	Duration: 104.92 ms	Billed Duration: 105 ms	Memory Size: 128 MB

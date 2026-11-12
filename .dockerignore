@@ -1,0 +1,6 @@
+*
+!Dockerfile
+!lab.py
+!handler.py
+!consumer.json
+!docker-shell.sh
